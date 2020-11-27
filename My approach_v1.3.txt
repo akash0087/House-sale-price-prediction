@@ -1,0 +1,18 @@
+Approach that I've followed:
+
+********** Data Pre-processing step ************
+
+I didn't delete any rows having NaNs and -ve values. 
+
+1) I've treated the NaNs using Median and Mode statistical approach.
+
+2) I've treated the -ve values using abs() function.
+
+Instead of removing the rows which are were having these values, I opted to pre-process them.
+
+
+********** Choosing the attributes for prediction ************
+
+1) Initially I've removed column: ['Customer_name'].
+
+2) Later, we made use of SelectKBest with chi2 function to select meaningful attributes.
